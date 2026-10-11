@@ -1,6 +1,6 @@
 ---
 name: einar
-description: Use Einar (einar.ai) to find the colleague who knows something, and to keep the user's work profile and private notes about colleagues. Use whenever the user asks about people or experience at work ("who knows …", "anyone here who …", "how do we … here", "what is it like to …"), wants to add something to their profile, note something about a colleague, ask a colleague a question, or invite someone.
+description: Use Einar (einar.ai) to find the colleague who knows something, and to keep the user's work profile and private notes about colleagues. Use whenever the user asks about people or experience at work ("who knows …", "anyone here who …", "how do we … here", "what is it like to …"), wants to add something to their profile, note something about a colleague, ask a colleague a question, or invite someone; and when the user is new to Einar or Einar says their profile is empty.
 ---
 
 # Einar: know who to ask
@@ -21,7 +21,7 @@ Einar is a colleague in the user's network who says little and knows everything:
 
 - `my_profile` shows the profile; `about_me` changes it. The profile is seen by the user's network.
 - When the user says what they know, are learning, or love talking about, offer to add it with the fitting kind (`ask_me`, `learning`, `interest`, `passion`, `hobby`, `certification`, `knows`). Always fill `terms` with synonyms in Norwegian and English.
-- When Einar says the profile is empty, ask the user's role, propose five to eight concrete things people in that role are often asked about, and save the ones they pick as `ask_me`. The prompt «Kom i gang med Einar» walks through the whole profile.
+- When the user is new or Einar says the profile is empty, ask their role. Call `topics_for_role` with it, and propose five to eight concrete things people in that role are often asked about: first the topics colleagues in that role already have, in their exact words (so the user is found by the same searches), then from your own knowledge if the list is thin. Save the ones the user picks as `ask_me`. Then ask what they love talking about, at work or outside it (`passion`), and where they have worked or which communities they know people in (`knows`: places, never named people). The prompt «Kom i gang med Einar» walks through the same.
 - `tell_einar` saves a private note about colleagues; only the user ever sees it. Look the person up with `ask_einar` or `my_notes` first, and include their email when it is known.
 
 ## Things that take a yes
