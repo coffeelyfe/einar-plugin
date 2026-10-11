@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "einar": {
+      "type": "http",
+      "url": "https://einar.ai/api/mcp"
+    }
+  }
+}

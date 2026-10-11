@@ -1,0 +1,15 @@
+{
+  "name": "einar",
+  "displayName": "Einar",
+  "description": "Know who to ask at work. Einar finds the colleague who knows something, keeps your work profile and private notes, and passes your questions on.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hafsaas Foundry",
+    "email": "andreashafsaas@gmail.com",
+    "url": "https://einar.ai"
+  },
+  "homepage": "https://einar.ai/docs",
+  "repository": "https://github.com/coffeelyfe/einar-plugin",
+  "license": "MIT",
+  "keywords": ["colleagues", "expertise", "knowledge sharing", "people search", "team"]
+}
