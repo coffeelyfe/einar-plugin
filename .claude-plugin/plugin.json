@@ -9,7 +9,14 @@
     "url": "https://einar.ai"
   },
   "homepage": "https://einar.ai/docs",
+  "privacyPolicyUrl": "https://einar.ai/privacy/en",
   "repository": "https://github.com/coffeelyfe/einar-plugin",
   "license": "MIT",
-  "keywords": ["colleagues", "expertise", "knowledge sharing", "people search", "team"]
+  "keywords": [
+    "colleagues",
+    "expertise",
+    "knowledge sharing",
+    "people search",
+    "team"
+  ]
 }
